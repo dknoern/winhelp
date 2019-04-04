@@ -2,7 +2,7 @@ Add-Content 'C:\postinstall.txt' 'enabling openSSH'
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 Add-Content 'C:\postinstall.txt' 'scheduling sshd startup on reboot'
-$trigger = New-JobTrigger -AtStartup -RandomDelay 00:00:30  >> 'C:\postinstall.txt' 2>&1
+$trigger = New-JobTrigger -AtStartup -RandomDelay 00:00:30
 Register-ScheduledJob -Trigger $trigger -ScriptBlock {Start-Service sshd} -Name StartOpenSSH >> 'C:\postinstall.txt' 2>&1
 
 Add-Content 'C:\postinstall.txt' 'installing chocolatey'
