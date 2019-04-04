@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachineName": {
+            "value": "dkx2g"
+        },
+        "location": {
+            "value": "westus"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/ce09439a-b80f-4b85-af6a-f899f2c7857f/resourceGroups/gitlab-ce-slalom/providers/Microsoft.Network/networkSecurityGroups/Win10VMNSG"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/ce09439a-b80f-4b85-af6a-f899f2c7857f/resourceGroups/AzureBackupRG_westus_1/providers/Microsoft.Network/virtualNetworks/AzureBackupRG_westus_1-vnet"
+        },
+        "adminUsername": {
+            "value": "davidk"
+        },
+        "adminPassword": {
+            "value": "Sandiego2019!"
+        }
+    }
+}
